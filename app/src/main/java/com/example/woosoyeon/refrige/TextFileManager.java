@@ -23,7 +23,7 @@ public class TextFileManager {
         }
         FileOutputStream fosMemo = null;
         try {
-            fosMemo = mContext.openFileOutput(FILE_NAME, Context.MODE_PRIVATE);
+            fosMemo = mContext.openFileOutput(FILE_NAME, Context.MODE_APPEND);
             fosMemo.write(strData.getBytes());
             fosMemo.close();
         } catch (Exception e) {
